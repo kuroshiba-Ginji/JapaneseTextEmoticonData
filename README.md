@@ -22,9 +22,9 @@ author = {Yuki Urabe and Rafal Rzepka and Kenji Araki},
 
 ## Dataset
 - train_20210126.pkl
-Training data contains 124,359 messages and each of them inlude one emoticon.
+Training data contains 124,359 sets of message-emoticon.
 - test_20210126.pkl
-Training data contains 37,622 messages and each of them inlude one emoticon.
+Training data contains 37,622 sets of message-emoticon.
 
 The datasets are comprised of "text", "emoticon", "textEmotion", "textPolarity", "emoEmotion", and "emoPolarity".
 - text: Japanese message
