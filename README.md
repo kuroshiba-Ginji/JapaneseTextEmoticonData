@@ -42,7 +42,7 @@ Environment
 
 ```python
 import pandas as pd
-df = pd.read_pickle('trainn_20210126.pkl')
+df = pd.read_pickle('train_20210126.pkl')
 ```
 
 See Example.ipynb for details.
