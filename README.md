@@ -22,8 +22,30 @@ author = {Yuki Urabe and Rafal Rzepka and Kenji Araki},
 
 ## Dataset
 - train_20210126.pkl
-Training data contains 
+Training data contains 124,359 messages and each of them inlude one emoticon.
 - test_20210126.pkl
+Training data contains 37,622 messages and each of them inlude one emoticon.
+
+The datasets are comprised of "text", "emoticon", "textEmotion", "textPolarity", "emoEmotion", and "emoPolarity".
+-- text: Japanese message
+-- emoticon: an emoticon which was inserted after the message
+-- textEmotion: emotion type of the emotional expression in a message (if exists). The values contained in this column are, "joy (喜)", "like (好)", "relief (安)", "anger (怒)", "dislike (厭)", "fear (恐)", "sad (哀)", "amaze (驚)", "shy (恥)", "excite (昂)", and "None (無)".
+-- textPolarity: polarity type of the emotional expression in a message (if exists). The values contained in this column are, "positive (ポジティブ)", "negative (ネガティブ", "others (その他)", and "None (無)".
+-- emoEmotion: emotion type of the emoticon.
+-- emoPolarity: polarity type of the emoticon.
+
+
+## How to load data
+- Environment
+-- Python (> 3.6)
+-- Pandas (1.2.3)
+
+```python
+import pandas as pd
+df = pd.read_pickle('trian_20210126.pkl'
+```
+
+See Example.ipynb for details.
 
 ## Licenses
 The dataset is distributed under the terms of the Creative Commons Attribution-ShareAlike 3.0.
