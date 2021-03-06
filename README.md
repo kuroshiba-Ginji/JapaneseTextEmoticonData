@@ -42,7 +42,7 @@ The datasets are comprised of "text", "emoticon", "textEmotion", "textPolarity",
 
 ```python
 import pandas as pd
-df = pd.read_pickle('trian_20210126.pkl'
+df = pd.read_pickle('trainn_20210126.pkl')
 ```
 
 See Example.ipynb for details.
